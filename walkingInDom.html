@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing Children of an Element | JavaScript Tutorial in Hindi #32</title>
+</head>
+
+<body><div>
+        <h1>Accessing Children of an Element | JavaScript Tutorial in Hindi #32</h1>
+        <span>Sibling</span>
+    </div>
+
+
+    <script>
+        let arr = Array.from(document.body.childNodes);
+        console.log(document.body.firstChild)
+        console.log(arr)
+        console.log(document.body.childNodes[0] === document.body.firstChild)
+        console.log(document.body.hasChildNodes);
+    </script>
+</body>
+
+</html>
