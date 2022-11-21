@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assingnment</title>
+</head>
+
+<body>
+    <h1>Whether even or odd</h1>
+    <label for="">Enter Number</label>
+    <input type="number" name="" id="evenOrOdd" onkeyup="isEvenOdd()">
+    <span id="result"></span>
+    <script>
+        const isEvenOdd = () =>{
+            num = document.querySelector("#evenOrOdd").value;
+            if(num <= 0) {
+                document.querySelector("#result").innerHTML = `Please enter the number`;
+            }
+            else if(num % 2 == 0) {
+                document.querySelector("#result").innerHTML = `${num} is even`;
+            }
+            else {
+                document.querySelector("#result").innerHTML = `${num} is odd`;
+
+            }
+            console.log(num)
+        }
+    </script>
+</body>
+
+</html>
