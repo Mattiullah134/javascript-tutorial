@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage and grade claculator | NEXSKILL</title>
+</head>
+
+<body>
+    <label for="result">Enter the number</label>
+    <input type="number" required placeholder="enter the number" id="input" onkeyup="table()">
+    <div id="result"></div>
+    <script>
+        function table() {
+            let input = document.querySelector("#input").value;
+            let result = document.querySelector("#result");
+            console.log(input)
+            console.log(result)
+            result.innerHTML = "";
+            for (let i = 0; i < 10; i++) {
+                
+                result.innerHTML += `"${input} × ${i + 1}" = ` input * ${i + 1};
+            }
+        }
+    </script>
+
+</body>
+
+</html>
